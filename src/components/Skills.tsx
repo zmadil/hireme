@@ -29,6 +29,10 @@ const categories = [
     label: "Edge",
     items: ["Raspberry Pi", "Edge AI", "Tailscale", "Self-Hosted Infra", "Telemetry Systems"],
   },
+  {
+    label: "Web & Marketing",
+    items: ["Web Development", "SEO Optimization", "Digital Marketing", "Social Media Strategy", "Content Strategy"],
+  },
 ];
 
 export default function Skills() {

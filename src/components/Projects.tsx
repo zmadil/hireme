@@ -5,7 +5,35 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 
-const projects = [
+type Project = {
+  title: string;
+  desc: string;
+  tags: string[];
+  bg: string;
+  emoji: string;
+  href?: string;
+  badge?: string;
+  bullets?: string[];
+};
+
+const projects: Project[] = [
+  {
+    title: "DwelloMate",
+    desc: "Smart home automation company — tailored solutions for lighting, security, and climate control.",
+    tags: ["Home Automation", "IoT", "Smart Home"],
+    bg: "#f0f9ff",
+    emoji: "🏠",
+    href: "https://dwellomate.webflow.io",
+    badge: "Founder",
+    bullets: [
+      "Tailored lighting with personalized mood settings",
+      "Security integration: smart locks, cameras & alerts",
+      "Climate control automation for year-round comfort",
+      "Locally stored data — private & secure by design",
+      "Works with Ring, Reolink, Aqara, Google Home & more",
+      "24/7 local technical support",
+    ],
+  },
   {
     title: "Local AI Infrastructure",
     desc: "Self-hosted LLM stack with Ollama, RAG pipelines, and AI workflow automation.",
@@ -70,25 +98,73 @@ export default function Projects() {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projects.map((p, i) => (
-            <motion.div
-              key={p.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: 0.05 * i }}
-              className="group relative p-6 rounded-2xl border border-black/[0.07] hover:border-black/20 transition-colors"
-              style={{ backgroundColor: p.bg }}
-            >
-              <div className="text-3xl mb-4">{p.emoji}</div>
-              <h3 className="text-sm font-semibold text-black mb-1.5">{p.title}</h3>
-              <p className="text-sm text-black/50 leading-relaxed mb-4">{p.desc}</p>
-              <div className="flex flex-wrap gap-1.5">
-                {p.tags.map((t) => (
-                  <span key={t} className="tag">{t}</span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+          {projects.map((p, i) => {
+            const inner = (
+              <>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="text-3xl">{p.emoji}</div>
+                  {p.badge && (
+                    <span className="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-black/[0.06] text-black/50">
+                      {p.badge}
+                    </span>
+                  )}
+                </div>
+                <h3 className="text-sm font-semibold text-black mb-1.5">{p.title}</h3>
+                <p className="text-sm text-black/50 leading-relaxed mb-4">{p.desc}</p>
+                {p.bullets && (
+                  <ul className="mb-4 space-y-1">
+                    {p.bullets.map((b) => (
+                      <li key={b} className="text-xs text-black/45 leading-snug flex gap-1.5">
+                        <span className="mt-[3px] shrink-0 w-1 h-1 rounded-full bg-black/20" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <div className="flex flex-wrap gap-1.5">
+                  {p.tags.map((t) => (
+                    <span key={t} className="tag">{t}</span>
+                  ))}
+                </div>
+                {p.href && (
+                  <div className="mt-4 flex items-center gap-1 text-xs font-medium text-black/40 group-hover:text-black/70 transition-colors">
+                    Visit site <ArrowUpRight size={11} />
+                  </div>
+                )}
+              </>
+            );
+
+            const cardClass =
+              "group relative p-6 rounded-2xl border border-black/[0.07] hover:border-black/20 transition-colors" +
+              (p.href ? " cursor-pointer" : "");
+
+            return p.href ? (
+              <motion.a
+                key={p.title}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: 0.05 * i }}
+                className={cardClass}
+                style={{ backgroundColor: p.bg }}
+              >
+                {inner}
+              </motion.a>
+            ) : (
+              <motion.div
+                key={p.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: 0.05 * i }}
+                className={cardClass}
+                style={{ backgroundColor: p.bg }}
+              >
+                {inner}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
