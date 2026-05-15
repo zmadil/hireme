@@ -61,7 +61,7 @@ export default function HireMe() {
                 Send inquiry <ArrowUpRight size={14} />
               </a>
               <a
-                href="https://linkedin.com/in/zainadil"
+                href="https://linkedin.com/in/zain-adil"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center px-5 py-3 border border-white/20 text-white/70 text-sm font-medium rounded-full hover:border-white/40 hover:text-white transition-colors"
