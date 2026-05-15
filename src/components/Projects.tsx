@@ -35,6 +35,21 @@ const projects: Project[] = [
     ],
   },
   {
+    title: "Web Marketing & SEO",
+    desc: "End-to-end digital growth — from search visibility and content strategy to social media engagement and conversion.",
+    tags: ["SEO", "Marketing", "Social Media", "Web Dev"],
+    bg: "#fff7ed",
+    emoji: "📈",
+    bullets: [
+      "On-page & technical SEO audits and implementation",
+      "Content strategy aligned with search intent",
+      "Social media management & engagement campaigns",
+      "Analytics setup: GA4, Search Console, conversion tracking",
+      "Landing page design optimized for lead generation",
+      "Monthly reporting with actionable growth insights",
+    ],
+  },
+  {
     title: "Local AI Infrastructure",
     desc: "Self-hosted LLM stack with Ollama, RAG pipelines, and AI workflow automation.",
     tags: ["Ollama", "RAG", "n8n"],
