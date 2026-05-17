@@ -75,7 +75,7 @@ const projects: Project[] = [
     desc: "Daily check-in bot that tracks goals and streaks via Telegram, powered by n8n workflows and AI-generated summaries.",
     tags: ["n8n", "Telegram", "AI", "Automation"],
     bg: "#fff8f0",
-    emoji: "✅",
+    emoji: "🤖",
   },
   {
     title: "n8n Automation Ecosystem",
