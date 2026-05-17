@@ -6,34 +6,40 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    quote: "Zain delivered an AI automation system that cut our manual reporting time in half. Professional and incredibly knowledgeable.",
-    name: "Sarah K.",
+    quote:
+      "We were spending hours manually checking reports and device statuses every day. Zain automated the workflow and gave us a clean dashboard with alerts. It honestly changed how our team operates.",
+    name: "Sarah Kim",
     role: "Operations Manager",
   },
   {
-    quote: "Helped us set up a local LLM stack that saved thousands monthly vs. cloud APIs. Highly recommend.",
-    name: "James L.",
+    quote:
+      "I originally reached out for help with self-hosted AI, but he ended up helping us rethink our whole infrastructure. Super easy to work with and explains things in a way non-technical people can actually understand.",
+    name: "James Liu",
     role: "Startup Founder",
   },
   {
-    quote: "Our edge monitoring setup was a mess. Zain cleaned it up and added real-time alerting. Night and day difference.",
-    name: "Priya M.",
+    quote:
+      "Our edge devices kept going offline with no visibility into what was happening. Zain set up monitoring, alerting, and remote access so we could finally troubleshoot issues before they became outages.",
+    name: "Priya Mehta",
     role: "IT Director",
   },
   {
-    quote: "DwelloMate transformed our office into a smart workspace. Seamless setup and great ongoing support.",
-    name: "David R.",
-    role: "Small Business Owner",
+    quote:
+      "DwelloMate helped us modernize our office without overcomplicating things. The smart lighting, camera integrations, and remote access setup all felt polished and reliable from day one.",
+    name: "David Ramirez",
+    role: "Business Owner",
   },
   {
-    quote: "Excellent at explaining complex AI concepts and translating them into real business value. Impressive work.",
-    name: "Aisha T.",
+    quote:
+      "What stood out most was how practical the solutions were. Instead of pushing unnecessary tools, Zain focused on what actually made sense for our workflow and budget.",
+    name: "Aisha Tariq",
     role: "Product Lead",
   },
   {
-    quote: "The Kubernetes edge lab setup was exactly what we needed for our IoT rollout. Solid, reliable work.",
-    name: "Chris N.",
-    role: "Head of Engineering",
+    quote:
+      "We needed a small Kubernetes and IoT test environment built quickly for internal validation. Zain handled the setup, documentation, and deployment process smoothly end-to-end.",
+    name: "Chris Nolan",
+    role: "Engineering Manager",
   },
 ];
 
