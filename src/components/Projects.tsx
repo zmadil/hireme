@@ -74,6 +74,7 @@ const projects: Project[] = [
     title: "Telegram Accountability App",
     desc: "Daily check-in bot that tracks goals and streaks via Telegram, powered by n8n workflows and AI-generated summaries.",
     tags: ["n8n", "Telegram", "AI", "Automation"],
+    href: "https://friend.n8nbronco.com",
     bg: "#fff8f0",
     emoji: "🤖",
   },
