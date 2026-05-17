@@ -7,7 +7,6 @@ import { ArrowUpRight } from "lucide-react";
 
 const links = [
   { label: "Email", value: "zainmadil95@gmail.com", href: "mailto:zainmadil95@gmail.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/zain-adil", href: "https://www.linkedin.com/in/zain-adil/?skipRedirect=true" },
 ];
 
 export default function Contact() {
