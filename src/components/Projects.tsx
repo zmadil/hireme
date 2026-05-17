@@ -35,6 +35,14 @@ const projects: Project[] = [
     ],
   },
   {
+    title: "Telegram Accountability App",
+    desc: "Daily check-in bot that tracks goals and streaks via Telegram, powered by n8n workflows and AI-generated summaries.",
+    tags: ["n8n", "Telegram", "AI", "Automation"],
+    href: "https://friend.n8nbronco.com",
+    bg: "#fff8f0",
+    emoji: "🤖",
+  },
+  {
     title: "Web Marketing & SEO",
     desc: "End-to-end digital growth — from search visibility and content strategy to social media engagement and conversion.",
     tags: ["SEO", "Marketing", "Social Media", "Web Dev"],
@@ -69,14 +77,6 @@ const projects: Project[] = [
     tags: ["Edge AI", "Docker", "MQTT"],
     bg: "#f0fff4",
     emoji: "👁",
-  },
-  {
-    title: "Telegram Accountability App",
-    desc: "Daily check-in bot that tracks goals and streaks via Telegram, powered by n8n workflows and AI-generated summaries.",
-    tags: ["n8n", "Telegram", "AI", "Automation"],
-    href: "https://friend.n8nbronco.com",
-    bg: "#fff8f0",
-    emoji: "🤖",
   },
   {
     title: "n8n Automation Ecosystem",
