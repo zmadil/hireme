@@ -6,32 +6,32 @@ import { useRef } from "react";
 
 const categories = [
   {
+    label: "Web & Business",
+    items: ["Web Development", "SEO Optimization", "Social Media Strategy", "CRM Setup", "GoHighLevel", "HubSpot", "Google Business Profile", "Content Strategy"],
+  },
+  {
     label: "AI & LLMs",
     items: ["Ollama", "RAG Pipelines", "Local LLMs", "AI Workflow Automation", "Prompt Engineering"],
-  },
-  {
-    label: "Infrastructure",
-    items: ["Kubernetes", "K3s", "Docker", "Helm", "GitOps", "FluxCD", "Ansible"],
-  },
-  {
-    label: "Cloud",
-    items: ["Microsoft Azure", "Azure IoT Operations", "Azure Arc", "Event Grid", "Azure Functions"],
   },
   {
     label: "Automation",
     items: ["n8n", "MQTT", "Event-Driven Architecture", "CI/CD", "Telegram Bots"],
   },
   {
+    label: "Cloud",
+    items: ["Microsoft Azure", "Azure IoT Operations", "Azure Arc", "Event Grid", "Azure Functions"],
+  },
+  {
     label: "Development",
     items: ["Python", "C# / .NET", "TypeScript", "PostgreSQL", "MongoDB"],
   },
   {
-    label: "Edge",
-    items: ["Raspberry Pi", "Edge AI", "Tailscale", "Self-Hosted Infra", "Telemetry Systems"],
+    label: "Infrastructure & Edge",
+    items: ["Kubernetes", "K3s", "Docker", "Helm", "GitOps", "FluxCD", "Ansible"],
   },
   {
-    label: "Web & Marketing",
-    items: ["Web Development", "SEO Optimization", "Digital Marketing", "Social Media Strategy", "Content Strategy"],
+    label: "Edge Hardware",
+    items: ["Raspberry Pi", "Edge AI", "Tailscale", "Self-Hosted Infra", "Telemetry Systems"],
   },
 ];
 

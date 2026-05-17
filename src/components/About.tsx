@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const stats = [
-  { value: "1,000+", label: "IIoT sensors deployed" },
+  { value: "20+", label: "Businesses helped" },
   { value: "5+", label: "Years in engineering" },
   { value: "6", label: "Microsoft certifications" },
 ];
@@ -24,7 +24,7 @@ export default function About() {
         >
           <p className="text-sm font-bold font-mono text-black/30 uppercase tracking-widest mb-5">About</p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-snug text-black">
-            Building AI systems that work in the real world.
+            Tech that works for your business.
           </h2>
         </motion.div>
 
@@ -35,9 +35,7 @@ export default function About() {
           className="space-y-6"
         >
           <p className="text-base text-black/55 leading-relaxed">
-            Software engineer with hands-on experience deploying AI at the edge —
-            from local LLMs and RAG pipelines to Kubernetes clusters running on
-            industrial hardware.
+            Software engineer and digital consultant with experience across AI systems, web development, and business technology. I work with small businesses who need a reliable tech partner — and with technical teams who need AI and automation expertise.
           </p>
           <div className="grid grid-cols-3 gap-4 pt-4 border-t border-black/[0.06]">
             {stats.map((s) => (

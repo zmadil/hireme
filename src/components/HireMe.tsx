@@ -6,12 +6,12 @@ import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
-  "LLM integration & RAG pipelines",
+  "Website design & development",
+  "SEO setup & optimization",
+  "Social media strategy & management",
+  "CRM software setup & support",
   "AI workflow automation (n8n)",
-  "Kubernetes & edge infrastructure",
-  "Azure cloud architecture",
-  "IIoT system design",
-  "Self-hosted AI infrastructure",
+  "LLM integration & intelligent systems",
 ];
 
 export default function HireMe() {
@@ -35,8 +35,7 @@ export default function HireMe() {
               Let's build something.
             </h2>
             <p className="text-white/50 text-base leading-relaxed">
-              Open to AI consulting contracts, short-term projects, and
-              infrastructure engagements. Remote-first.
+              Open to consulting contracts with small businesses and technical teams. Website builds, digital growth, AI automation, and more. Remote-first.
             </p>
           </motion.div>
 

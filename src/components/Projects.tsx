@@ -18,6 +18,21 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Web Marketing & SEO",
+    desc: "End-to-end digital growth — from search visibility and content strategy to social media engagement and conversion.",
+    tags: ["SEO", "Marketing", "Social Media", "Web Dev"],
+    bg: "#fff7ed",
+    emoji: "📈",
+    bullets: [
+      "On-page & technical SEO audits and implementation",
+      "Content strategy aligned with search intent",
+      "Social media management & engagement campaigns",
+      "Analytics setup: GA4, Search Console, conversion tracking",
+      "Landing page design optimized for lead generation",
+      "Monthly reporting with actionable growth insights",
+    ],
+  },
+  {
     title: "DwelloMate",
     desc: "Smart home automation company — tailored solutions for lighting, security, and climate control.",
     tags: ["Home Automation", "IoT", "Smart Home"],
@@ -41,21 +56,6 @@ const projects: Project[] = [
     href: "https://friend.n8nbronco.com",
     bg: "#fff8f0",
     emoji: "🤖",
-  },
-  {
-    title: "Web Marketing & SEO",
-    desc: "End-to-end digital growth — from search visibility and content strategy to social media engagement and conversion.",
-    tags: ["SEO", "Marketing", "Social Media", "Web Dev"],
-    bg: "#fff7ed",
-    emoji: "📈",
-    bullets: [
-      "On-page & technical SEO audits and implementation",
-      "Content strategy aligned with search intent",
-      "Social media management & engagement campaigns",
-      "Analytics setup: GA4, Search Console, conversion tracking",
-      "Landing page design optimized for lead generation",
-      "Monthly reporting with actionable growth insights",
-    ],
   },
   {
     title: "Local AI Infrastructure",

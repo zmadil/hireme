@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-const roles = ["AI Engineer.", "Edge Infrastructure.", "Independent Contractor."];
+const roles = ["AI & Automation.", "Web & Digital Growth.", "Independent Contractor."];
 
 export default function Hero() {
   return (
@@ -46,8 +46,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.45 }}
         className="text-base text-black/50 max-w-md leading-relaxed mb-10"
       >
-        I build LLM systems, edge AI infrastructure, and intelligent automation.
-        Based in Houston. Open to remote contracts globally.
+        I help small businesses and technical teams build what they need — websites, SEO, social media strategy, CRM setup, and AI-powered automation. Based in Houston. Remote-friendly.
       </motion.p>
 
       <motion.div

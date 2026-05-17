@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zain Adil — AI Consultant",
+  title: "Zain Adil — AI & Digital Consultant",
   description:
-    "AI consultant and independent contractor. LLM systems, edge computing, Kubernetes, and industrial IoT.",
+    "AI consultant and independent contractor. LLM systems, web development, SEO, social media, and CRM support for small businesses.",
 };
 
 export default function RootLayout({
